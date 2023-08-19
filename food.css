@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    animation: head 1s ease-in-out;
+}
+@keyframes head{
+    0%{
+        transform: translateY(-100%);
+    }
+}
+#logo{
+    flex: 3;
+    font-size: 25px;
+    min-width: 180px;
+}
+header nav{
+    display: flex;
+    flex: 2;
+    font-weight: bold;
+    align-items: center;
+}
+header nav a{
+    flex: 1;
+    min-width: 85px;
+    
+}
+nav a i,#logo i{
+    margin-right: 7px;
+}
+header a{
+    text-decoration: none;
+    color: rgb(223, 223, 42);
+}
+.container{
+    background: url(images.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-left: 60px;
+    animation: con 1s ease-in;
+}
+@keyframes con{
+    0%{
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+}
+.content h2{
+    color: orangered;
+    font-size: 60px;
+}
+.content h3{
+    color: white;
+    padding-top: 10px;
+    text-shadow: 1px 0 1px grey;
+    font-size: 30px;
+}
+.content h4{
+    color: white;
+    padding-top: 10px;
+}
+.content button{
+    width: 90px;
+    margin-top: 10px;
+    padding: 5px;
+    background-color: rgb(90, 231, 90);
+    border-radius: 10%;
+}
+.menu{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(243px,1fr));
+    background: linear-gradient(to right,rgb(39, 27, 27),black );
+    color: white;
+    font-size: 20px;
+}
+#menuhead{
+    background: linear-gradient(to right,rgb(41, 29, 29),black );
+    color: red;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    
+}
+table{
+    width: 100%;
+    padding: 15px;
+}
+.menu th{
+    color: green;
+    font-size: 30px;  
+}
+.menu tr{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+.menu td:nth-child(1){
+    flex: 1;
+    justify-self: left;
+}
+.menu td:nth-child(2){
+    justify-self: right;
+}
+.maincourse{
+    grid-row: span 2;
+}
+.location{
+    background: linear-gradient(to right,rgb(41, 29, 29),black );
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+#locationhead{
+    background: linear-gradient(to right,rgb(41, 29, 29),black );
+    font-size: 50px;
+    color: red;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.location h2{
+    color: green;
+}
+.location div{
+    flex: 1;
+    min-width: 150px;
+    padding: 10px;
+    padding-bottom: 20px;
+}
+#copyright{
+    background-color: black;
+    color: white;
+}
